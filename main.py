@@ -12,7 +12,6 @@ logger = logging.getLogger(__name__)
 TOKEN = os.environ.get("BOT_TOKEN", "8688224741:AAEd2BRTAc5Ccm0Olgn23BcIVubVD-hquyY")
 OWNER = "miyrat11"
 
-# Rasm file_id lar
 file_ids = {
     "1":  "AgACAgIAAxkBAAMIafcGl-e6WoFqmgABA2woBjX1b87LAAJtFWsbbLi5S7hk8_EhcfpKAQADAgADeQADOwQ",
     "2":  "AgACAgIAAxkBAAMLafcGsGLnOO7HYK2QbW77HT94-3cAAm4VaxtsuLlL1yRfHUJNwa8BAAMCAAN5AAM7BA",
@@ -41,33 +40,33 @@ file_ids = {
 }
 
 tovarlar = [
-    {"id": 1,  "nomi": "Ikat atlas",              "tur": "mato",    "narx": 35000,  "tarkib": "Paxta",    "eni": "1.5 m",  "tag": "new"},
-    {"id": 2,  "nomi": "Qizil gul ipek",           "tur": "mato",    "narx": 40000,  "tarkib": "Ipek",     "eni": "1.5 m",  "tag": ""},
-    {"id": 3,  "nomi": "Anar naqish baxmal",       "tur": "mato",    "narx": 40000,  "tarkib": "Baxmal",   "eni": "1.5 m",  "tag": "new"},
-    {"id": 4,  "nomi": "Limon print",              "tur": "mato",    "narx": 30000,  "tarkib": "Krep",     "eni": "1.5 m",  "tag": "sale"},
-    {"id": 5,  "nomi": "Qara kostyum (klassik)",   "tur": "kostyum", "narx": 65000,  "tarkib": "Gazlama",  "eni": "44-54",  "tag": ""},
-    {"id": 6,  "nomi": "Qara kostyum Classic",     "tur": "kostyum", "narx": 50000,  "tarkib": "Gazlama",  "eni": "44-54",  "tag": ""},
-    {"id": 7,  "nomi": "Qara kostyum jaltiraq",    "tur": "kostyum", "narx": 50000,  "tarkib": "Gazlama",  "eni": "44-54",  "tag": ""},
-    {"id": 8,  "nomi": "Kok kostyum",              "tur": "kostyum", "narx": 55000,  "tarkib": "Gazlama",  "eni": "44-54",  "tag": "new"},
-    {"id": 9,  "nomi": "Qara kurtka (morali)",     "tur": "kurtka",  "narx": 120000, "tarkib": "Sintetik", "eni": "S-XXL",  "tag": "new"},
-    {"id": 10, "nomi": "Qara kurtka (jengil)",     "tur": "kurtka",  "narx": 90000,  "tarkib": "Sintetik", "eni": "S-XXL",  "tag": ""},
-    {"id": 11, "nomi": "Demix kurtka",             "tur": "kurtka",  "narx": 100000, "tarkib": "Sintetik", "eni": "S-XXL",  "tag": ""},
-    {"id": 12, "nomi": "Kurtka (qosimsha)",        "tur": "kurtka",  "narx": 60000,  "tarkib": "Sintetik", "eni": "S-XXL",  "tag": "sale"},
-    {"id": 13, "nomi": "Aq gul oramal",            "tur": "oramal",  "narx": 15000,  "tarkib": "Shifon",   "eni": "90x90",  "tag": ""},
-    {"id": 14, "nomi": "Gullu oramal (mix)",       "tur": "oramal",  "narx": 15000,  "tarkib": "Shifon",   "eni": "90x90",  "tag": ""},
-    {"id": 15, "nomi": "Qizil gul oramal",         "tur": "oramal",  "narx": 10000,  "tarkib": "Shal",     "eni": "90x90",  "tag": "sale"},
-    {"id": 16, "nomi": "Naqishli oramal",          "tur": "oramal",  "narx": 10000,  "tarkib": "Shal",     "eni": "90x90",  "tag": "sale"},
-    {"id": 17, "nomi": "Qara jemper (baxmal)",     "tur": "jemper",  "narx": 120000, "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
-    {"id": 18, "nomi": "Aq jemper (Turkzar)",      "tur": "jemper",  "narx": 90000,  "tarkib": "Trikotaj", "eni": "S-XXL",  "tag": ""},
-    {"id": 19, "nomi": "Qara shapan (zardozi)",    "tur": "shapan",  "narx": 40000,  "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": ""},
-    {"id": 20, "nomi": "Kok shapan (zardozi)",     "tur": "shapan",  "narx": 45000,  "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
-    {"id": 21, "nomi": "Kok shapan (naqishli)",    "tur": "shapan",  "narx": 40000,  "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": ""},
-    {"id": 22, "nomi": "Qara jaket (naqishli)",    "tur": "jaket",   "narx": 120000, "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
-    {"id": 23, "nomi": "Qara jaket (jengsiz)",     "tur": "jaket",   "narx": 90000,  "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": ""},
-    {"id": 24, "nomi": "Qiz jaketi (qizil)",       "tur": "jaket",   "narx": 90000,  "tarkib": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
+    {"id": 1,  "Ati": "Qizil atlas",              "tur": "mato",    "Summasi": 35000,  "qurami": "Paxta",    "eni": "1.5 m",  "tag": "new"},
+    {"id": 2,  "Ati": "Qizil gul jipek",           "tur": "mato",    "Summasi": 40000,  "qurami": "Jipek",     "eni": "1.5 m",  "tag": ""},
+    {"id": 3,  "Ati": "Anar nagis bahali",       "tur": "mato",    "Summasi": 40000,  "qurami": "Baxmal",   "eni": "1.5 m",  "tag": "new"},
+    {"id": 4,  "Ati": "Limon print",              "tur": "mato",    "Summasi": 30000,  "qurami": "qatti",     "eni": "1.5 m",  "tag": "sale"},
+    {"id": 5,  "Ati": "Qara kostyum (klassik)",   "tur": "kostyum", "Summasi": 65000,  "qurami": "Gezleme",  "eni": "44-54",  "tag": ""},
+    {"id": 6,  "Ati": "Qara kostyum (Classic)",     "tur": "kostyum", "Summasi": 50000,  "qurami": "Gezleme",  "eni": "44-54",  "tag": ""},
+    {"id": 7,  "Ati": "Qara kostyum jaltiraq",    "tur": "kostyum", "Summasi": 50000,  "qurami": "Gezleme",  "eni": "44-54",  "tag": ""},
+    {"id": 8,  "Ati": "Kok kostyum",              "tur": "kostyum", "Summasi": 55000,  "qurami": "Gezleme",  "eni": "44-54",  "tag": "new"},
+    {"id": 9,  "Ati": "Qara kurtka (jagali)",     "tur": "kurtka",  "Summasi": 120000, "qurami": "Sintetik", "eni": "S-XXL",  "tag": "new"},
+    {"id": 10, "Ati": "Qara kurtka (jengil)",     "tur": "kurtka",  "Summasi": 90000,  "qurami": "Sintetik", "eni": "S-XXL",  "tag": ""},
+    {"id": 11, "Ati": "Demix kurtka",             "tur": "kurtka",  "Summasi": 100000, "qurami": "Sintetik", "eni": "S-XXL",  "tag": ""},
+    {"id": 12, "Ati": "Kurtka (qosimsha)",        "tur": "kurtka",  "Summasi": 60000,  "qurami": "Sintetik", "eni": "S-XXL",  "tag": "sale"},
+    {"id": 13, "Ati": "Aq gul oramal",            "tur": "oramal",  "Summasi": 15000,  "qurami": "Shifon",   "eni": "90x90",  "tag": ""},
+    {"id": 14, "Ati": "Gullu oramal (mix)",       "tur": "oramal",  "Summasi": 15000,  "qurami": "Shifon",   "eni": "90x90",  "tag": ""},
+    {"id": 15, "Ati": "Qizil gul oramal",         "tur": "oramal",  "Summasi": 10000,  "qurami": "Shal",     "eni": "90x90",  "tag": "sale"},
+    {"id": 16, "Ati": "Naqishli oramal",          "tur": "oramal",  "Summasi": 10000,  "qurami": "Shal",     "eni": "90x90",  "tag": "sale"},
+    {"id": 17, "Ati": "Qara jemper (baxmal)",     "tur": "jemper",  "Summasi": 120000, "qurami": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
+    {"id": 18, "Ati": "Aq jemper (Turkzar)",      "tur": "jemper",  "Summasi": 90000,  "qurami": "Trikotaj", "eni": "S-XXL",  "tag": ""},
+    {"id": 19, "Ati": "Qara shapan (zardozi)",    "tur": "shapan",  "Summasi": 40000,  "qurami": "Baxmal",   "eni": "S-XXL",  "tag": ""},
+    {"id": 20, "Ati": "Kok shapan (zardozi)",     "tur": "shapan",  "Summasi": 45000,  "qurami": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
+    {"id": 21, "Ati": "Kok shapan (naqishli)",    "tur": "shapan",  "Summasi": 40000,  "qurami": "Baxmal",   "eni": "S-XXL",  "tag": ""},
+    {"id": 22, "Ati": "Qara jaket (naqishli)",    "tur": "jaket",   "Summasi": 120000, "qurami": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
+    {"id": 23, "Ati": "Qara jaket (jengsiz)",     "tur": "jaket",   "Summasi": 90000,  "qurami": "Baxmal",   "eni": "S-XXL",  "tag": ""},
+    {"id": 24, "Ati": "Qiz jaketi (qizil)",       "tur": "jaket",   "Summasi": 90000,  "qurami": "Baxmal",   "eni": "S-XXL",  "tag": "new"},
 ]
 
-SELECTING_TUR, SELECTING_TOVAR, ENTERING_MIQDOR, ENTERING_ISM, ENTERING_TEL = range(5)
+SELECTING_TUR, SELECTING_TOVAR, TOVAR_DETAIL, ENTERING_MIQDOR, ENTERING_ISM, ENTERING_TEL = range(6)
 
 def get_turlar():
     return list(dict.fromkeys([t["tur"] for t in tovarlar]))
@@ -77,12 +76,17 @@ def tag_emoji(tag):
     if tag == "sale": return " 🔖"
     return ""
 
+def tag_text_full(tag):
+    if tag == "new": return "🆕 Jana tovar"
+    if tag == "sale": return "🔖 Chegirma bar!"
+    return ""
+
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     turlar = get_turlar()
     keyboard = [[InlineKeyboardButton(f"📦 {t.capitalize()}", callback_data=f"tur:{t}")] for t in turlar]
     keyboard.append([InlineKeyboardButton("🛍️ Barligi", callback_data="tur:barligi")])
     await update.message.reply_text(
-        "👋 Xosh kelipsiз!\n\n🛍️ *Dukan kataloги*\n\nQaysı turdi tanlaysiz?",
+        "👋 Xosh kelipsiз!\n\n🛍️ *Qadelik zatlar uyi*\n\nQaysı turdi tanlaysiz?",
         parse_mode="Markdown",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
@@ -96,17 +100,18 @@ async def tur_tanlandi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     list_ = tovarlar if tur == "barligi" else [t for t in tovarlar if t["tur"] == tur]
     keyboard = []
     for t in list_:
-        label = f"{t['nomi']}{tag_emoji(t['tag'])} — {t['narx']:,} som"
+        label = f"{t['nomi']}{tag_emoji(t['tag'])}"
         keyboard.append([InlineKeyboardButton(label, callback_data=f"m:{t['id']}")])
     keyboard.append([InlineKeyboardButton("⬅️ Artqa", callback_data="back:start")])
     await query.edit_message_text(
-        f"📋 *{tur.capitalize()}* tovarlari:\n\nBirin tanlang:",
+        f"📋 *{tur.capitalize()}* tovarlari:\n\nKormekshi bolganinizdi tanlan 👇",
         parse_mode="Markdown",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
     return SELECTING_TOVAR
 
-async def tovar_tanlandi(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def tovar_detail(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    """Tovar bosilganda — rasm + to'liq ma'lumot + Artqa/Zakaz tugmalari"""
     query = update.callback_query
     await query.answer()
     mid = int(query.data.split(":")[1])
@@ -114,37 +119,62 @@ async def tovar_tanlandi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not m:
         return
     context.user_data["tovar"] = m
-    tag_text = {"new": "🆕 Jana", "sale": "🔖 Chegirma", "": ""}.get(m["tag"], "")
+
+    tag = tag_text_full(m["tag"])
     caption = (
-        f"✅ *{m['nomi']}*\n\n"
+        f"🏷️ *{m['nomi']}*\n"
+        f"{'━' * 20}\n"
         f"📁 Turi: {m['tur'].capitalize()}\n"
         f"🧵 Quramı: {m['tarkib']}\n"
-        f"📏 Olshemi: {m['eni']}\n"
-        f"💰 Bahası: *{m['narx']:,} som*\n"
-        + (f"🏷️ {tag_text}\n" if tag_text else "") +
-        f"\nNeshe dona/metr kerek?"
+        f"📏 Eni/Olshemi: {m['eni']}\n"
+        f"💰 Bahası: *{m['narx']:,} som/metr*\n"
+        + (f"✨ {tag}\n" if tag else "") +
+        f"{'━' * 20}\n"
+        f"Buyirpa bermekshisiz be?"
     )
     keyboard = [
-        [InlineKeyboardButton("1", callback_data="miqdor:1"),
-         InlineKeyboardButton("2", callback_data="miqdor:2"),
-         InlineKeyboardButton("3", callback_data="miqdor:3")],
-        [InlineKeyboardButton("4", callback_data="miqdor:4"),
-         InlineKeyboardButton("5", callback_data="miqdor:5"),
-         InlineKeyboardButton("Basqasha (jazın)", callback_data="miqdor:custom")],
-        [InlineKeyboardButton("⬅️ Artqa", callback_data="back:tur")]
+        [InlineKeyboardButton("✅ Zakaz berish", callback_data=f"zakaz:{m['id']}")],
+        [InlineKeyboardButton("⬅️ Artqa", callback_data=f"back:tur")],
     ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
     fid = file_ids.get(str(m["id"]))
     if fid:
         await query.message.reply_photo(
             photo=fid,
             caption=caption,
             parse_mode="Markdown",
-            reply_markup=reply_markup
+            reply_markup=InlineKeyboardMarkup(keyboard)
         )
-        await query.message.delete()
+        try:
+            await query.message.delete()
+        except:
+            pass
     else:
-        await query.edit_message_text(caption, parse_mode="Markdown", reply_markup=reply_markup)
+        await query.edit_message_text(caption, parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(keyboard))
+    return TOVAR_DETAIL
+
+async def zakaz_boshlash(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    query = update.callback_query
+    await query.answer()
+    m = context.user_data.get("tovar")
+    if not m:
+        mid = int(query.data.split(":")[1])
+        m = next((x for x in tovarlar if x["id"] == mid), None)
+        context.user_data["tovar"] = m
+
+    keyboard = [
+        [InlineKeyboardButton("0.5", callback_data="miqdor:0.5"),
+         InlineKeyboardButton("1", callback_data="miqdor:1"),
+         InlineKeyboardButton("1.5", callback_data="miqdor:1.5")],
+        [InlineKeyboardButton("2", callback_data="miqdor:2"),
+         InlineKeyboardButton("3", callback_data="miqdor:3"),
+         InlineKeyboardButton("5", callback_data="miqdor:5")],
+        [InlineKeyboardButton("Basqasha (jazın)", callback_data="miqdor:custom")],
+    ]
+    await query.message.reply_text(
+        f"📏 *{m['nomi']}*\n\nNeshe metr/dona kerek?",
+        parse_mode="Markdown",
+        reply_markup=InlineKeyboardMarkup(keyboard)
+    )
     return ENTERING_MIQDOR
 
 async def miqdor_tanlandi(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -152,20 +182,20 @@ async def miqdor_tanlandi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
     val = query.data.split(":")[1]
     if val == "custom":
-        await query.message.reply_text("✏️ Sanın jazın (san):")
+        await query.message.reply_text("✏️ Sanın jazın (misali: 2.5):")
         return ENTERING_MIQDOR
-    context.user_data["miqdor"] = int(val)
+    context.user_data["miqdor"] = float(val)
     await query.message.reply_text("👤 Atınızdı jazın:")
     return ENTERING_ISM
 
 async def miqdor_matn(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
-        miqdor = float(update.message.text.strip())
-        context.user_data["miqdor"] = miqdor
+        miqdor = float(update.message.text.strip().replace(",", "."))
+        context.user_data["miqdor"] = mugdari
         await update.message.reply_text("👤 Atınızdı jazın:")
         return ENTERING_ISM
     except:
-        await update.message.reply_text("❗ Tek san jazın:")
+        await update.message.reply_text("❗ Tek san jazın (misali: 2 yaki 1.5):")
         return ENTERING_MIQDOR
 
 async def ism_kiritildi(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -179,33 +209,39 @@ async def tel_kiritildi(update: Update, context: ContextTypes.DEFAULT_TYPE):
     m = context.user_data["tovar"]
     miqdor = context.user_data["miqdor"]
     ism = context.user_data["ism"]
-    jami = m["narx"] * miqdor
+    jami = m["narx"] * mugdar
+
     await update.message.reply_text(
-        f"✅ *Siparısınız qabıl etildi!*\n\n"
-        f"📦 {m['nomi']}\n"
-        f"🔢 Sanı: {miqdor}\n"
-        f"💰 Jemi: *{jami:,.0f} som*\n"
+        f"✅ *Buyirtpaniz qabıl etildi!*\n\n"
+        f"🏷️ {m['nomi']}\n"
+        f"📏 Sanı: {miqdor} metr\n"
+        f"💰 Jami: *{jami:,.0f} som*\n"
         f"👤 Atı: {ism}\n"
         f"📞 Tel: {tel}\n\n"
         f"Tez arada @{OWNER} siz menen baylanisadi! 🙏",
         parse_mode="Markdown"
     )
+
     owner_text = (
-        f"🔔 *Jana siparıs!*\n\n"
-        f"📦 Tovar: {m['nomi']}\n"
+        f"🔔 *Jana buyirtpa!*\n\n"
+        f"🏷️ Tovar: {m['nomi']}\n"
         f"📁 Turi: {m['tur']}\n"
-        f"🔢 Sanı: {miqdor}\n"
-        f"💰 Jemi: {jami:,.0f} som\n"
-        f"👤 Mijoz: {ism}\n"
+        f"🧵 Quramı: {m['tarkib']}\n"
+        f"📏 Sanı: {miqdor} metr\n"
+        f"💰 Jami: {jami:,.0f} som\n"
+        f"👤 Qariydar: {ism}\n"
         f"📞 Tel: {tel}\n"
-        f"🆔 Telegram: @{update.effective_user.username or 'username joq'}"
+        f"🆔 TG: @{update.effective_user.username or 'joq'}"
     )
     try:
         await context.bot.send_message(chat_id=f"@{OWNER}", text=owner_text, parse_mode="Markdown")
     except Exception as e:
-        logger.error(f"Xato: {e}")
-    keyboard = [[InlineKeyboardButton("🛍️ Jana siparıs", callback_data="restart")]]
-    await update.message.reply_text("Jana siparıs bermoqchimisiz?", reply_markup=InlineKeyboardMarkup(keyboard))
+        logger.error(f"Xate: {e}")
+
+    keyboard = [
+        [InlineKeyboardButton("🛍️ Jana buyirtpa", callback_data="restart")],
+    ]
+    await update.message.reply_text("Jańa buyirtpa bermekshizbe?", reply_markup=InlineKeyboardMarkup(keyboard))
     return ConversationHandler.END
 
 async def back_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -217,7 +253,7 @@ async def back_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         keyboard = [[InlineKeyboardButton(f"📦 {t.capitalize()}", callback_data=f"tur:{t}")] for t in turlar]
         keyboard.append([InlineKeyboardButton("🛍️ Barligi", callback_data="tur:barligi")])
         await query.message.reply_text(
-            "🛍️ *Dukan kataloги*\n\nQaysı turdi tanlaysiz?",
+            "🛍️ *Qadelik zatlar*\n\nQaysı turdi tanlaysiz?",
             parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(keyboard)
         )
         return SELECTING_TUR
@@ -226,10 +262,14 @@ async def back_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         list_ = tovarlar if tur == "barligi" else [t for t in tovarlar if t["tur"] == tur]
         keyboard = []
         for t in list_:
-            label = f"{t['nomi']}{tag_emoji(t['tag'])} — {t['narx']:,} som"
+            label = f"{t['nomi']}{tag_emoji(t['tag'])}"
             keyboard.append([InlineKeyboardButton(label, callback_data=f"m:{t['id']}")])
         keyboard.append([InlineKeyboardButton("⬅️ Artqa", callback_data="back:start")])
-        await query.message.reply_text("📋 Tovarlar:", reply_markup=InlineKeyboardMarkup(keyboard))
+        await query.message.reply_text(
+            f"📋 *{tur.capitalize()}* tovarlari:",
+            parse_mode="Markdown",
+            reply_markup=InlineKeyboardMarkup(keyboard)
+        )
         return SELECTING_TOVAR
 
 async def restart(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -239,7 +279,7 @@ async def restart(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [[InlineKeyboardButton(f"📦 {t.capitalize()}", callback_data=f"tur:{t}")] for t in turlar]
     keyboard.append([InlineKeyboardButton("🛍️ Barligi", callback_data="tur:barligi")])
     await query.message.reply_text(
-        "🛍️ *Dukan kataloги*\n\nQaysı turdi tanlaysiz?",
+        "🛍️ *Qadelik zatlar*\n\nQaysı turdi tanlaysiz?",
         parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(keyboard)
     )
     return SELECTING_TUR
@@ -254,8 +294,18 @@ def main():
         entry_points=[CommandHandler("start", start), CallbackQueryHandler(restart, pattern="^restart$")],
         states={
             SELECTING_TUR: [CallbackQueryHandler(tur_tanlandi, pattern="^tur:")],
-            SELECTING_TOVAR: [CallbackQueryHandler(tovar_tanlandi, pattern="^m:"), CallbackQueryHandler(back_handler, pattern="^back:")],
-            ENTERING_MIQDOR: [CallbackQueryHandler(miqdor_tanlandi, pattern="^miqdor:"), CallbackQueryHandler(back_handler, pattern="^back:"), MessageHandler(filters.TEXT & ~filters.COMMAND, miqdor_matn)],
+            SELECTING_TOVAR: [
+                CallbackQueryHandler(tovar_detail, pattern="^m:"),
+                CallbackQueryHandler(back_handler, pattern="^back:"),
+            ],
+            TOVAR_DETAIL: [
+                CallbackQueryHandler(zakaz_boshlash, pattern="^zakaz:"),
+                CallbackQueryHandler(back_handler, pattern="^back:"),
+            ],
+            ENTERING_MIQDOR: [
+                CallbackQueryHandler(miqdor_tanlandi, pattern="^miqdor:"),
+                MessageHandler(filters.TEXT & ~filters.COMMAND, miqdor_matn),
+            ],
             ENTERING_ISM: [MessageHandler(filters.TEXT & ~filters.COMMAND, ism_kiritildi)],
             ENTERING_TEL: [MessageHandler(filters.TEXT & ~filters.COMMAND, tel_kiritildi)],
         },
